@@ -92,7 +92,6 @@ a:hover { /* FireFox リンク選択時の点線を消す */
 	font-weight: bold;
 }
 
-
 .wrapper{
 	padding-top: 30px;
 	text-align: center;
@@ -141,6 +140,7 @@ footer p{
 }
 footer a{
 	color: #fff;
+	display: inline-block;
 }
 footer a:hover{
 	color: #777;
