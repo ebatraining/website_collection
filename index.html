@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8">
+  <title>Web Site Collection</title>
+  <meta name="description" content="Web Site Collection">
+  <meta name="keywords" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0,user-scalable=yes">
+  <link rel="stylesheet" type="text/css" href="./css/normalize.css">
+  <link rel="stylesheet" type="text/css" href="./css/drawer.css">
+  <link rel="stylesheet" type="text/css" href="./css/style.css">
+  <link rel="stylesheet" type="text/css" href="./css/jquery.pagepiling.css">
+  <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/iScroll/5.1.3/iscroll.min.js"></script>
+  <script src="./js/jquery.pagepiling.min.js"></script>
+  <script src="./js/drawer.min.js"></script>
+<!--[if lt IE 9]>
+	<script src="./js/html5.js"></script>
+	<script src="./js/respond.min.js"></script>
+<![endif]-->
+<!--[if lte IE 8]>
+	<script src="./js/jquery.backgroundSize.js"></script>
+<![endif]-->
+  <script>
+    $(document).ready(function() {
+      $('#pagepiling').pagepiling({
+        menu: '#menu',
+        anchors: ['page1', 'page2', 'page3','page4','page5','page6','page7','page8','page9','page10','page11','page12','page13'],
+        navigation: {
+          'position': 'right',
+          'tooltips': ['Top', 'IT', 'Rental', 'Study', 'Medical', 'Health', 'Food', 'Accessorie', 'Beauty', 'Game', 'Architecture', 'Ceremony', 'Machine']
+        },
+        scrollingSpeed: 1000,
+        sectionSelector: '.contents'
+      });
+    });
+  </script>
+<!--  ドロワーメニュー  -->
+  <script>
+    $(document).ready(function() {
+      $(".drawer").drawer();
+    });
+  </script>
+</head>
+
+<body class="drawer drawer--left">
+<!-- ハンバーガーボタン -->
+  <button type="button" class="drawer-toggle drawer-hamburger">
+    <span class="sr-only">toggle navigation</span>
+    <span class="drawer-hamburger-icon"></span>
+  </button>
+  <nav class="drawer-nav">
+<!-- ドロワーメニューの中身 -->
+    <ul class="drawer-menu">
+      <li><a href="#page1">Top</a></li>
+      <li><a href="#page2">IT</a></li>
+      <li><a href="#page3">レンタル</a></li>
+      <li><a href="#page4">学習</a></li>
+      <li><a href="#page5">健康・医療</a></li>
+      <li><a href="#page6">健康食品</a></li>
+      <li><a href="#page7">食品</a></li>
+      <li><a href="#page8">ファッション</a></li>
+      <li><a href="#page9">美容</a></li>
+      <li><a href="#page10">ゲーム・レジャー</a></li>
+      <li><a href="#page11">建築・インテリア</a></li>
+      <li><a href="#page12">冠婚葬祭</a></li>
+      <li><a href="#page13">機械製造</a></li>
+    </ul>
+  </nav>
+  <section>
+<!-- コンテンツ部分 -->
+    <ul id="menu">
+      <li data-menuanchor="page1" class="active"><a href="#page1">Top</a></li>
+      <li data-menuanchor="page2"><a href="#page2">IT</a></li>
+      <li data-menuanchor="page3"><a href="#page3">レンタル</a></li>
+      <li data-menuanchor="page4"><a href="#page4">学習</a></li>
+      <li data-menuanchor="page5"><a href="#page5">健康・医療</a></li>
+      <li data-menuanchor="page6"><a href="#page6">健康食品</a></li>
+      <li data-menuanchor="page7"><a href="#page7">食品</a></li>
+      <li data-menuanchor="page8"><a href="#page8">ファッション</a></li>
+      <li data-menuanchor="page9"><a href="#page9">美容</a></li>
+      <li data-menuanchor="page10"><a href="#page10">ゲーム・レジャー</a></li>
+      <li data-menuanchor="page11"><a href="#page11">建築・インテリア</a></li>
+      <li data-menuanchor="page12"><a href="#page12">冠婚葬祭</a></li>
+      <li data-menuanchor="page13"><a href="#page13">機械製造</a></li>
+    </ul>
+    <div id="pagepiling">
+      <div class="contents" id="top">
+        <h1><img src="./images/h1.png" alt="websitecollection"></h1>
+      </div>
+      <div class="contents" id="it">
+        <h2><img src="./images/it.png" alt="IT"></h2>
+        <div class="wrapper">
+          <div class="wrap">
+            <a href="http://ebacorp.jp/" target="_blank"><img src="./images/eba.png" alt="EBA株式会社"><h3>EBA株式会社</h3></a>
+            <p>SEO対策、webサイト制作を行っている会社です。個人のブログサイトから企業様のwebサイトまで幅広く対応しています。特定派遣の業務も請け負っています。</p>
+          </div>
+          <div class="wrap">
+            <a href="http://gs-inc.jp/services/japico" target="_blank"><img src="./images/growup.png" alt="株式会社グローアップソリューションズ"><h3>株式会社グローアップソリューションズ</h3></a>
+            <p>個人情報とその資格やJAPiCOマークなどについての説明が書いてあります。</p>
+          </div>
+        </div>
+      </div>
+      <div class="contents" id="rental">
+        <h2><img src="./images/rental.png" alt="レンタル"></h2>
+        <div class="wrapper">
+          <div class="wrap">
+            <a href="http://www.creed-greenrental.com/" target="_blank"><img src="./images/creed.png" alt="有限会社 クリード"><h3>有限会社 クリード</h3></a>
+            <p>神奈川県中心に植物のレンタルを1鉢から行っています。レンタルの他にも水やり、植物の病気等も月に1度点検するなどのサービスも行っています。</p>
+          </div>
+          <div class="wrap">
+            <a href="http://www.rental-o.com/" target="_blank"><img src="./images/office.png" alt="レンタルオフィス.com"><h3>レンタルオフィス.com</h3></a>
+            <p>理想のレンタルオフィスを探すならレンタルオフィス.comで。完全個室・時間貸し・電話代行・24時間利用など料金に応じたサービスも充実しています</p>
+          </div>
+        </div>
+      </div>
+      <div class="contents" id="study">
+        <h2><img src="./images/study.png" alt="学習"></h2>
+        <div class="wrapper">
+          <div class="wrap">
+            <a href="http://manten100.com/" target="_blank"><img src="./images/manten.png" alt="家庭教師の満点"><h3>家庭教師の満点</h3></a>
+            <p>新潟の家庭教師の満点です。在籍している家庭教師の先生は、医学部生、歯学部生のみという高学歴な新潟市在住の先生ばかりです。</p>
+          </div>
+        </div>
+      </div>
+      <div class="contents" id="medical">
+        <h2><img src="./images/medical.png" alt="健康・医療"></h2>
+        <div class="wrapper">
+          <div class="wrap">
+            <a href="http://www.online-kensa.com/lp/" target="_blank"><img src="./images/oes.png" alt="株式会社OES"><h3>株式会社OES</h3></a>
+            <p>男性不妊の治療前に、郵送で精子検査（精液検査）をしています。精子検査、結果はパソコン、スマホ、携帯電話で確認できるため、病院に行く手間は一切かかりません。</p>
+          </div>
+          <div class="wrap">
+            <a href="http://www.kirakuza.jp/" target="_blank"><img src="./images/kirakuza.png" alt="昭島楽座株式会社"><h3>昭島楽座株式会社</h3></a>
+            <p>肩こり解消グッズの素材にもなっている、自然界最高レベルの健康石「貴陽石」。群馬長石御座入鉱山でのみ採れる天然鉱石「貴陽石」を取り扱っているショップです。</p>
+          </div>
+          <div class="wrap">
+            <a href="http://h-kyoritsu.com/" target="_blank"><img src="./images/kyoritsu.png" alt="方南町共立薬局"><h3>方南町共立薬局</h3></a>
+            <p>一人ひとりのお客様とのふれあいを大切に！あなたのかかりつけ薬局をめざしています。地域の皆様・お客様に、今、必要とされるサービスを提供してまいりたいと思います。</p>
+          </div>
+        </div>
+      </div>
+      <div class="contents" id="health">
+        <h2><img src="./images/health.png" alt="健康食品"></h2>
+        <div class="wrapper">
+          <div class="wrap">
+            <a href="http://sis7shop.ca.shopserve.jp/lp/" target="_blank"><img src="./images/sis.png" alt="高麗人参健康食品のヘルシーSIS"><h3>高麗人参健康食品のヘルシーSIS</h3></a>
+            <p>高麗人参の健康食品のサイトです。韓国特産の高麗人参濃縮液を主原料とした当社の商品はサプリメントになっており、トコフェロール、ロイヤルゼリー、ビタミンE、B6などが含有されております。</p>
+          </div>
+          <div class="wrap">
+            <a href="http://www.medical-cook.co.jp/" target="_blank"><img src="./images/medicalcook.png" alt="株式会社メディカル・クック宅配便"><h3>株式会社メディカル・クック宅配便</h3></a>
+            <p>腎臓病食・糖尿病食などの宅配ならメディカルクック宅食便。安全な食材を吟味したうえ、ベテランの管理栄養士と調理師の手による在宅療養食を全国のご家庭に送料無料で、最短で翌日お届けします。</p>
+          </div>
+          <div class="wrap">
+            <a href="http://healthcare-div.weblike.jp/zemaitis/nyuusan/" target="_blank"><img src="./images/div.png" alt="ヘルスケアDIV(ゼマイティス)"><h3>ヘルスケアDIV(ゼマイティス)</h3></a>
+            <p>乳酸菌サプリの通販サイトです。サプリメントは飲料よりも吸収性などに優れていると言われており、飲料が苦手な方も摂取しやすいです。</p>
+          </div>
+        </div>
+      </div>
+      <div class="contents" id="food">
+        <h2><img src="./images/food.png" alt="食品"></h2>
+        <div class="wrapper">
+          <div class="wrap">
+            <a href="http://nakanotani.com/" target="_blank"><img src="./images/ginmai.png" alt="中谷農事組合法人"><h3>中谷農事組合法人</h3></a>
+            <p>お米の通販なら【中谷農事組合】へ。コウノトリ舞い降りるコシヒカリのお米を産地直送ですぐに通販でお届け致します。白米・玄米・7分づきなど、兵庫県安心ブランド認証のお米です。</p>
+          </div>
+          <div class="wrap">
+            <a href="http://www.amamibussan.jp/lp/" target="_blank"><img src="./images/kurozato.png" alt="奄美大島のお土産店"><h3>奄美大島のお土産店</h3></a>
+            <p>長寿の島奄美の自然食材、黒砂糖のことなら「奄美大島のお土産店」。300円程度でご購入いただけますので、多くの方にお安くお買い求めいただける商品です。</p>
+          </div>
+        </div>
+      </div>
+      <div class="contents" id="accessorie">
+        <h2><img src="./images/fashion.png" alt="ファッション"></h2>
+        <div class="wrapper">
+          <div class="wrap">
+            <a href="http://misumi.jp.net/" target="_blank"><img src="./images/misumi.png" alt="MISUMI"><h3>MISUMI</h3></a>
+            <p>パワーストーン・ブレスレットを中心とした天然石・アクセサリーブランド、MISUMIの公式通販サイトです。</p>
+          </div>
+          <div class="wrap">
+            <a href="http://accessory-ranking.com" target="_blank"><img src="./images/accessory.png" alt="アクセサリーランキング.com"><h3>アクセサリーランキング.com</h3></a>
+            <p>いろいろな効果をもたらすパワーストーンのアクセサリーランキングを紹介しています。そのアクセサリー通販サイトもご案内しています。</p>
+          </div>
+        </div>
+      </div>
+      <div class="contents" id="beauty">
+        <h2><img src="./images/beauty.png" alt="美容"></h2>
+        <div class="wrapper">
+          <div class="wrap">
+            <a href="http://www.gelnail-oroshitonya.com/lp/" target="_blank"><img src="./images/gno.png" alt="GEL-NAIL-OROSHITONYA"><h3>GEL-NAIL-OROSHITONYA</h3></a>
+            <p>削らないジェルネイルオフ!!爪を大切にジェルを楽しみたい女性の為の必要品　～ 簡単ジェルネイルオフで、時間の確保、爪も傷めない！ ～</p>
+          </div>
+          <div class="wrap">
+            <a href="http://beauty.kirali.co.jp/search/?s_area=1103&cat=1" target="_blank"><img src="./images/kirari.png" alt="KiRaLi"><h3>KiRaLi</h3></a>
+            <p>表参道の美容室やエステサロンの情報やクーポンを掲載しています。輝く女性のためのスタイルマガジンです。</p>
+          </div>
+        </div>
+      </div>
+    <div class="contents" id="game">
+      <h2><img src="./images/game.png" alt="ゲーム・レジャー"></h2>
+      <div class="wrapper">
+        <div class="wrap">
+          <a href="http://www.bestgame.jp/" target="_blank"><img src="./images/bestgame.png" alt="ベストゲーム"><h3>ベストゲーム</h3></a>
+          <p>ソーシャルゲームランキング、スマホゲームランキングとして、多数のゲームをランキング形式でご紹介しております！各ゲームの内容や遊び方も掲載されています。</p>
+        </div>
+        <div class="wrap">
+          <a href="http://buzz-game.jp/" target="_blank"><img src="./images/buzzgame.png" alt="バズゲーム"><h3>バズゲーム</h3></a>
+          <p>ゲームを「やってみた」的な感じで徒然なるままに日記のような感覚で書いていくサイトです。</p>
+        </div>
+        <div class="wrap">
+          <a href="http://jetskiniigata.sakura.ne.jp/" target="_blank"><img src="./images/jetski.png" alt="新潟ジェットスキーライセンススクール"><h3>新潟ジェットスキーライセンススクール</h3></a>
+          <p>新潟でジェットスキー、モーターバイクを楽しむならジェットスキー新潟にお任せください！操縦に必要な免許も最安価格で取得できます。</p>
+        </div>
+      </div>
+    </div>
+    <div class="contents" id="architecture">
+      <h2><img src="./images/architecture.png" alt="建築・インテリア"></h2>
+      <div class="wrapper">
+        <div class="wrap">
+          <a href="http://kensetsu.kyokadaikou.com/" target="_blank"><img src="./images/kyoka.png" alt="キョカちゃん代行建設業許可申請 代行サービス"><h3>キョカちゃん代行建設業許可申請 代行サービス</h3></a>
+          <p>建設業許可の取得・申請代行をお考えなら「建設業許可申請代行のキョカちゃん代行」にぜひご相談下さい。全国４７都道府県からキョカちゃんが選んだ厳選の行政書士をご紹介します。</p>
+        </div>
+        <div class="wrap">
+          <a href="http://www.casa-ines.jp/" target="_blank"><img src="./images/casa.png" alt="輸入雑貨　カーサイネス"><h3>輸入雑貨　カーサイネス</h3></a>
+          <p>軽井沢でフランスやアメリカからの素敵なキッチンやリビングのインテリア雑貨を多数揃えている輸入雑貨カーサイネスのオンラインショップです。大人の女性向きな輸入インテリア雑貨を多数取り扱っています。</p>
+        </div>
+      </div>
+    </div>
+    <div class="contents" id="ceremony">
+      <h2><img src="./images/ceremony.png" alt="冠婚葬祭"></h2>
+      <div class="wrapper">
+        <div class="wrap">
+          <a href="http://go-sougi.com/" target="_blank"><img src="./images/setagaya.png" alt="世田谷セレモニー"><h3>世田谷セレモニー</h3></a>
+          <p>世田谷区で高品質なお葬式を行うなら世田谷セレモニーへ。家族葬・一般葬・社葬・直葬式など30年のキャリアで様々なご葬儀形態に対応しています。</p>
+        </div>
+      </div>
+    </div>
+    <div class="contents" id="machine">
+      <h2><img src="./images/machine.png" alt="機械製造"></h2>
+      <div class="wrapper">
+        <div class="wrap">
+          <a href="http://www.hitachi-juki.com/" target="_blank"><img src="./images/hitachi.png" alt="株式会社日立重機設計"><h3>株式会社日立重機設計</h3></a>
+          <p>エアーバランサー｢ミスターキャッチマン｣をはじめとする、エアー式移載機の製造・販売メーカーのサイトです。熟練した職人が、永年のノウハウをもとに、設計から制作、試験まで対応いたします。</p>
+        </div>
+      </div>
+    </div>
+    </div>
+    <footer><p>Copyright(C)2016 WebSiteCollection All Rights Reserved.</p>
+    <p><a href="./index.html">【 TOPページ 】</a><a href="http://ebacorp.jp/kaisyagaiyou.html" target="_blank">【 運営会社 】</a><a href="http://ebacorp.jp/privacy.html" target="_blank">【 プライバシーポリシー 】</a></p></footer>
+  </section>
+
+</body>
+</html>
