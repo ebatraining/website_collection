@@ -191,6 +191,10 @@ footer a:hover{
 #machine{
   background-image: url(../images/kikai.jpg);
 }
+button,.drawer-nav{
+	display: none\9;!;
+}
+
 @media screen and (min-width:1024px) {
 	button,.drawer-nav{
 		display: none!important;
